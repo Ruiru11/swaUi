@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { ApolloClient, NormalizedCacheObject, gql } from "@apollo/client";
 import {
   createContext,
@@ -6,7 +7,7 @@ import {
   useState,
   ReactNode,
 } from "react";
-import { IPeopledata, Result } from "./types";
+import { Result } from "./types";
 
 const PeopleContext = createContext<{
   people: Result[];

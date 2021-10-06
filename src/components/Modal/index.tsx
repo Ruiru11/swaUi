@@ -1,4 +1,4 @@
-import { Fragment, ReactElement, ReactNode, useState } from "react";
+import { Fragment, ReactElement, ReactNode } from "react";
 import * as S from "./styled-components";
 
 type Props = {

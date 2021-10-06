@@ -1,5 +1,5 @@
 import { css } from "goober";
-import { useState, useEffect, Fragment } from "react";
+import { useState, Fragment } from "react";
 import Modal from "../../components/Modal";
 import { usePeople } from "../../context/PeopleProvider";
 import { Result } from "../../context/types";
@@ -14,9 +14,7 @@ function SinglePerson({ item }: { item: Result }) {
         <S.ListDescription inverse={false}>
           Height: {item.height}
         </S.ListDescription>
-        <S.ListDescription inverse={false}>
-          Mass: {item.mass}
-        </S.ListDescription>
+        <S.ListDescription inverse={false}>Mass: {item.mass}</S.ListDescription>
         <S.ListDescription inverse={false}>
           Gender: {item.gender}
         </S.ListDescription>
@@ -42,7 +40,6 @@ export default function PeoplePage() {
   const [searchQuery, setSearchQuery] = useState("");
   const {
     people,
-    error,
     loading,
     getPeople,
     paginate: { total_pages, page },
