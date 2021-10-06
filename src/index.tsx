@@ -13,7 +13,7 @@ import {
 import PeopleProvider from "./context/PeopleProvider";
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql",
+  uri: "https://apistarwar.herokuapp.com/graphql",
   cache: new InMemoryCache(),
 });
 
